@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Portfolio</title>
+  <!-- lodash 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+
+<!-- 테일윈드 불러오기 -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- 폰트어썸 불러오기 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- 제이쿼리 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<!-- 스와이퍼 불러오기 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- 페이지네이션 불러오기 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <article class="work-detail">
+        <div class="work-detail__btn-back">
+            <a href="index.html">
+                <svg aria-hidden="true" class="btn-back-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="none">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.125" d="M6.504 15.5 2.254 10l4.25-5.5M2.746 10h15"></path>
+                </svg>
+                <span> Go Home</span>
+            </a>
+        </div>
+        <div class="work-detail__info">
+            <div class="info-wrap">
+                <div class="icon bg-[#f9f8ee]">
+                    <img src="https://abib.com/images/logo_pc.png" alt="">
+                </div>
+            </div>
+            <div class="info-summary">
+                <div>
+                    <strong>Work Detail</strong>
+                    <h1>ABIB 개편</h1>
+                </div>
+                <div>
+                    <p class="work-detail-txt">직관적이고, 간결한 네비게이션 구조로 사용자가 원하는 정보를 쉽게 찾을 수 있도록 개편</p>
+                </div>
+                <div class="view-more">
+                    <a href="https://oyoomh.github.io/Abib-renewal/" target="_blank">
+                        <svg class="CustomLink-module--icon--edbbc" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                            <circle cx="9" cy="9" r="9" fill="currentColor"></circle>
+                            <path stroke="var(--color-beige)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8 6 3 3-3 3"></path>
+                        </svg>
+                        <span>개편 후 페이지 바로가기</span>
+                    </a>
+                </div>
+                <div class="view-more pt-[10px]">
+                    <a href="https://abib.com/" target="_blank">
+                        <svg class="CustomLink-module--icon--edbbc" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                            <circle cx="9" cy="9" r="9" fill="currentColor"></circle>
+                            <path stroke="var(--color-beige)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8 6 3 3-3 3"></path>
+                        </svg>
+                        <span>기존 페이지 바로가기</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="work-detail__main-board">
+
+            <div class="content-1">
+                <h2 class="figure-tit">js 함수의 활용</h2>
+
+                <div class="contents">
+                    <div class="contents__left">
+                        <div class="figure">
+                            <div class="img-wrap">
+                                <a href='https://ifh.cc/v-rKG5MC' target='_blank'><img src='images/abib-mobile-best.gif' border='0'></a>
+                            </div>
+                            <figcaption>
+                                <p>각 카테고리의 베스트 상품 정보를 제공합니다. 함수를 활용하여 제품 메뉴 클릭 시 해당 제품컷이 나오도록 설계하였습니다.</p>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="contents__right">
+                        <div class="figure">
+                            <div class="img-wrap">
+                                <a href='https://ifh.cc/v-0q0q0m' target='_blank'><img src='images/abib-pc-bestt.gif' border='0'></a>
+                            </div>
+                            <figcaption>
+                                <p>pc 사용자가 제품 메뉴 클릭 시 해당 제품의 제형과 원물을 파악할 수 있도록 설계하였습니다.</p>
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-1">
+                <h2 class="figure-tit">Accodian, mega menu
+                </h2>
+                <div class="contents">
+                    <div class="contents__left">
+                        <div class="figure">
+                            <div class="img-wrap">
+                              <a href='https://ifh.cc/v-OfLP27' target='_blank'><img src='images/abib-mobile-menu.gif' border='0'></a>
+                            </div>
+                            <figcaption>
+                                <p>기존 모바일 메뉴 페이지의 단순 나열 형식이 사용자의 편의성을 방해하여 수정이 필요하다고 생각했습니다. 아코디언 메뉴 형식으로 제작하여 모바일 기기에서의 사용 편의성을 높였습니다.</p>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="contents__right">
+                        <div class="figure">
+                            <div class="img-wrap">
+                                <a href='https://ifh.cc/v-oPSkWs' target='_blank'><img src='images/abib-pc-menuu.gif' border='0'></a>
+                            </div>
+                            <figcaption>
+                                <p>기존 메뉴 페이지의 어색한 공간 분배와 가독성이 떨어지는 단순 나열 형식을 개선하고자 하였습니다. 슬라이드 메가메뉴 형태는 유지하되,라인을 이용하여 카테고리 별로 섹션을 나누고 메뉴의 가독성을 높였습니다.</p>
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-1">
+                <h2 class="figure-tit">swiper, scroll
+                    <div class="view-more pt-[10px]">
+                        <a href="https://codepen.io/JavaScriptJunkie/pen/WgRBxw" target="_blank">
+                            <svg class="CustomLink-module--icon--edbbc" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                <circle cx="9" cy="9" r="9" fill="currentColor"></circle>
+                                <path stroke="var(--color-beige)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8 6 3 3-3 3"></path>
+                            </svg>
+                            <span>swiper 오픈 소스 페이지 바로가기</span>
+                        </a>
+                        <a href="https://mu08.tistory.com/117" target="_blank" class="block pt-[10px]">
+                            <svg class="CustomLink-module--icon--edbbc" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                <circle cx="9" cy="9" r="9" fill="currentColor"></circle>
+                                <path stroke="var(--color-beige)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8 6 3 3-3 3"></path>
+                            </svg>
+                            <span>scroll 참고 페이지 바로가기</span>
+                        </a>
+                    </div>
+
+                </h2>
+
+                <div class="contents">
+                    <div class="contents__left">
+                        <div class="figure">
+                            <div class="img-wrap">
+                               <a href='https://ifh.cc/v-PMWOsf' target='_blank'><img src='images/abib-mobile-swiper.gif' border='0'></a>
+                            </div>
+                            <figcaption>
+                                <p>기존 페이지의 불필요한 배너는 최대한 제거하고, 스와이퍼를 사용하여 모바일 사용자의 편의를 고려한 간결한 디자인으로 변경하였습니다.</p>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="contents__right">
+                        <div class="figure">
+                            <div class="img-wrap">
+                                <a href='https://ifh.cc/v-N6zKf1' target='_blank'><img src='images/abib-pc-scroll.gif' border='0'></a>
+                            </div>
+                            <figcaption>
+                                <p>pc 사용자를 고려하였을 때 버튼이 없는 기존 페이지의 스와이퍼 형식이 개선이 필요하다고 생각했습니다. 마우스 스크롤을 통해 사용자가 간편하게 신제품의 정보를 파악할 수 있도록 스크롤 트리거를 적용하였습니다.</p>
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="content-abib">
+                <h2 class="figure-tit">Media-Query, input 태그</h2>
+                <div class="contents">
+                    <div class="contents-abib__left">
+                        <div class="figure">
+                            <div class="img-wrap">
+                              <a href='https://ifh.cc/v-kLyOyr' target='_blank'><img src='images/미디어쿼리.png' border='0'></a>
+                            </div>
+                            <figcaption>
+                                <p>미디어 쿼리를 이용한 반응형 작업을 진행하였습니다.</p>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="contents-abib__right">
+                        <div class="figure">
+                            <div class="img-wrap">
+                             <a href='https://ifh.cc/v-lsatVB' target='_blank'><img src='images/인풋.png' border='0'></a>
+                            </div>
+                            <figcaption>
+                                <p>search box에 input 태그 적용하였습니다.</p>
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </article>
+</main>
+  
+</body>
+</html>

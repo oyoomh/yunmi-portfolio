@@ -217,7 +217,6 @@ a {
   position: relative;
   width: 100%;
   border-radius: 30px;
-  background-color: #FFDA99;
 }
 .about__inner-box .inner-img {
   position: relative;
@@ -244,7 +243,7 @@ a {
   display: block;
   font-size: 4rem;
   font-weight: 900;
-  color: #FF7860;
+  color: #F78973;
 }
 .about__inner-box .inner-text .desc {
   font-size: 1.5rem;
@@ -294,7 +293,7 @@ a {
   width: 100%;
   min-height: 90rem;
   border-radius: 30px;
-  background-color: #CAFDC9;
+  background-color: #FFFB8C;
 }
 .works .works-wrap .web-project {
   display: block;
@@ -302,7 +301,7 @@ a {
   font-weight: 700;
   text-align: center;
   padding: 50px;
-  color: #F06CAE;
+  color: #F78973;
 }
 .works__list {
   align-items: center;
